@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
     console.log(data);
 
     var result = data.filter(data => data.company !== "tokopedia");
-    console.log("jancuk");
+    console.log("jancukk");
     console.log(result);
 });
 

@@ -1,0 +1,64 @@
+[
+	{
+		"text": "tokopedia pelayanannya memuaskan",
+		"reply_count" : "20",
+		"retweet_count" : "40",
+		"favorite_count" : "10",
+		"follower_count" : "10000",
+		"sensitive": "1",
+		"company_name" : "tokopedia",
+		"created_at" : "1525544220"
+	},
+	{
+		"text": "saya kecewa dengan pelayanan dari tokopedia",
+		"reply_count" : "0",
+		"retweet_count" : "0",
+		"favorite_count" : "0",
+		"follower_count" : "300",
+		"sensitive": "0",
+		"company_name" : "bukalapak",
+		"created_at" : "1525723200"
+	},
+	{
+		"text": "saya suka berbelanja di tokopedia",
+		"reply_count" : "0",
+		"retweet_count" : "5",
+		"favorite_count" : "1",
+		"follower_count" : "500",
+		"sensitive": "1",
+		"company_name" : "tokopedia",
+		"created_at" : "1525784200"
+	},
+	{
+		"text": "saya suka tokopedia",
+		"reply_count" : "50",
+		"retweet_count" : "230",
+		"favorite_count" : "100",
+		"follower_count" : "200000",
+		"sensitive": "1",
+		"company_name" : "tokopedia",
+		"created_at" : "1525782000"
+
+	},
+	{
+		"text": "saya menghimbau agar masyarakat tidak belanja di tokopedia",
+		"reply_count" : "100",
+		"retweet_count" : "500",
+		"favorite_count" : "1000",
+		"follower_count" : "50000",
+		"sensitive": "0",
+		"company_name" : "tokopedia",
+		"created_at" : "1526103513"
+	},
+	{
+		"text": "kurang baik pelayanannya",
+		"reply_count" : "980",
+		"retweet_count" : "1500",
+		"favorite_count" : "1000",
+		"follower_count" : "100",
+		"sensitive": "0",
+		"company_name" : "tokopedia",
+		"created_at" : "1526104513"
+
+	}
+]
