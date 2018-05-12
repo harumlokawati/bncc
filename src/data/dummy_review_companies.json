@@ -1,0 +1,38 @@
+[
+	{
+		"text": "di tokopedia kerjanya ",
+		"role": "software engineer",
+		"company": "tokopedia",
+		"sensitive": "1"
+	},
+	{
+		"text": "di tokopedia capek bgt bro kerjanya",
+		"role": "software engineer",
+		"company": "bukalapak",
+		"sensitive": "0"
+	},
+	{
+		"text": "interviewnya cepet banget",
+		"role": "software engineer",
+		"company": "tokopedia",
+		"sensitive": "1"
+	},
+	{
+		"text": "interviewnya gaje",
+		"role": "unemployed",
+		"company": "unemployed",
+		"sensitive": "0"
+	},
+	{
+		"text": "tokopedia sering ngadain workshop bro",
+		"role": "software engineer",
+		"company": "traveloka",
+		"sensitive": "1"
+	},
+	{
+		"text": "ditokopedia besok ada event javascript tuh",
+		"role": "software engineer",
+		"company": "bukalapak",
+		"sensitive": "1"
+	}
+]
