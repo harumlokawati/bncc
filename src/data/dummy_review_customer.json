@@ -6,7 +6,8 @@
 		"favorite_count" : "10",
 		"follower_count" : "10000",
 		"sensitive": "1",
-		"company_name" : "tokopedia"
+		"company_name" : "tokopedia",
+		"created_at" : "1525544220"
 	},
 	{
 		"text": "saya kecewa dengan pelayanan dari tokopedia",
@@ -15,7 +16,8 @@
 		"favorite_count" : "0",
 		"follower_count" : "300",
 		"sensitive": "0",
-		"company_name" : "tokopedia"
+		"company_name" : "bukalapak",
+		"created_at" : "1525723200"
 	},
 	{
 		"text": "saya suka berbelanja di tokopedia",
@@ -24,7 +26,8 @@
 		"favorite_count" : "1",
 		"follower_count" : "500",
 		"sensitive": "1",
-		"company_name" : "tokopedia"
+		"company_name" : "tokopedia",
+		"created_at" : "1525784200"
 	},
 	{
 		"text": "saya suka tokopedia",
@@ -33,7 +36,9 @@
 		"favorite_count" : "100",
 		"follower_count" : "200000",
 		"sensitive": "1",
-		"company_name" : "tokopedia"
+		"company_name" : "tokopedia",
+		"created_at" : "1525782000"
+
 	},
 	{
 		"text": "saya menghimbau agar masyarakat tidak belanja di tokopedia",
@@ -42,7 +47,8 @@
 		"favorite_count" : "1000",
 		"follower_count" : "50000",
 		"sensitive": "0",
-		"company_name" : "tokopedia"
+		"company_name" : "tokopedia",
+		"created_at" : "1526103513"
 	},
 	{
 		"text": "kurang baik pelayanannya",
@@ -51,6 +57,8 @@
 		"favorite_count" : "1000",
 		"follower_count" : "100",
 		"sensitive": "0",
-		"company_name" : "tokopedia"
+		"company_name" : "tokopedia",
+		"created_at" : "1526104513"
+
 	}
 ]
