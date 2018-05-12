@@ -10,6 +10,8 @@ var config = require("./config.json");
 //route
 var words_router = require("./controllers/pw_words_controllers");
 var reaction_router = require("./controllers/reaction_controllers");
+var customer_router = require("./controllers/customer_review_controllers");
+
 
 db.connect('mongodb://localhost/bncc', function() {
 	console.log('connected');
@@ -25,6 +27,8 @@ app.get('/', function(req, res) {
 
 app.use('/company/words', words_router);
 app.use('/reaction', reaction_router);
+app.use('/customer/', customer_router);
+
 
 // var T = new Twit({
 // 	consumer_key:         config.consumer_key,
