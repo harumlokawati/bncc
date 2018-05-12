@@ -18,33 +18,39 @@ router.post('/', function(req, res) {
     var company_name = req.body.company_name;
     var word = req.body.word;
 
-    words.find({company: req.params.company_name}, (err, result) => {
+    words.findOne({company: company_name}, (err, result) => {
         if (err) {
             console.log(err);
             res.json({"msg": "something error"});
         }
 
-
-        if (result.length == 0) {
+        if (result.length === 0) {
             var new_company_words = new words({
                 company: company_name,
-                powerfulWords: word
+                powerfulWords: jancuk
             });
 
             new_company_words.save((err) => {
-                if (err)
+                if (err) 
                     res.json({"msg": "something error"});
                 else {
                     res.json({"msg": "success"});
                 }
             });
         }
-
-        //kalo udh ada, di tambah arraynya
-        //to-do
-
-        
-        res.json(result);
+        else {
+            //kalo udh ada, di tambah arraynya
+            var new_powerful_words_array = result.powerfulWords;
+            new_powerful_words_array.push(word);
+            
+            result.update({powerfulWords: new_powerful_words_array}, (err) => {
+                if (err) 
+                    res.json({"msg": "something error"});
+                else {
+                    res.json({"msg": "success"});
+                } 
+            });
+        }
     });
 });
 
