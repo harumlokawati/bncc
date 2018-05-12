@@ -49,41 +49,32 @@ router.get(':/companyName/follower', function(req, res) {
     })
 });
 
-/*
-router.post('/', function(req, res) {
-    var company_name = req.body.company_name;
-    var word = req.body.word;
-
-    words.find({company: req.params.company_name}, (err, result) => {
-        if (err) {
-            console.log(err);
-            res.json({"msg": "something error"});
-        }
+router.post(':/companyName', function(req, res) {
+    var company_name = req.params.company_name;
+    var replyCount = req.body.reply_count;
+    var retweetCount = req.body.retweet_count;
+    var favoriteCount = req.body.favorite_count;
+    var followerCount = req.body.follower_count;
 
 
-        if (result.length == 0) {
-            var new_company_words = new words({
+    var customerReview = new customer({
                 company: company_name,
-                powerfulWords: word
+                reply_count: replyCount,
+                retweet_count: retweetCount,
+                favorite_count: favoriteCount,
+                follower_count: followerCount
             });
 
-            new_company_words.save((err) => {
-                if (err)
+            customerReview.save((err) => {
+                if (err) 
                     res.json({"msg": "something error"});
                 else {
                     res.json({"msg": "success"});
                 }
             });
-        }
 
-        //kalo udh ada, di tambah arraynya
-        //to-do
-
-        
-        res.json(result);
-    });
 });
 
-*/
+
 
 module.exports = router;
