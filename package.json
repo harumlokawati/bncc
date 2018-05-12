@@ -1,0 +1,19 @@
+{
+  "name": "bncc",
+  "version": "0.0.1",
+  "description": "backend",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlwaysWannaFly",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.0",
+    "parsehub": "^0.1.1",
+    "twitter": "^1.7.1"
+  }
+}
