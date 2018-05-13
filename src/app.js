@@ -10,7 +10,7 @@ var config = require("./config.json");
 
 //route
 var words_router = require("./controllers/pw_words_controllers");
-var reaction_router = require("./controllers/reaction_controllers");
+var reaction_router = require("./controllers/reactionController");
 var customer_router = require("./controllers/customer_review_controllers");
 
 
