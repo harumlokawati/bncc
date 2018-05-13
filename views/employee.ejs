@@ -267,8 +267,16 @@
 									});
 									
 									$.get("http://localhost:3000/company/words/<%=company_name%>", function(data, status){
-										console.log("kampret")
-										console.log(data);
+										var words = data.powerfulWords;
+										var counter = 1;
+										words.forEach(function(element) {
+											var cont = document.createElement('tr');
+											var td1 = "<td>"+counter+"</td>";
+											var td2 = "<td>"+element.word+"</td>";
+											cont.td1);
+											cont.append(td2);
+											$('#powerfulWords').append(cont);
+										});
 									});
 								});
 								</script>
@@ -466,7 +474,7 @@
 													<th scope="col">Word</th>
 												</tr>
 											</thead>
-											<tbody>
+											<tbody id="powerfulWords">
 												<tr>
 													<td>1</td>
 													<td>Mark</td>
