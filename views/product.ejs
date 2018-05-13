@@ -10,6 +10,20 @@
 	<link rel="stylesheet" href="template/template2/assets/css/demo.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="template/template2/assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="template/template2/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="template/template2/assets/js/core/popper.min.js"></script>
+	<script src="template/template2/assets/js/core/bootstrap.min.js"></script>
+	<script src="template/template2/assets/js/plugin/chartist/chartist.min.js"></script>
+	<script src="template/template2/assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+	<script src="template/template2/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<script src="template/template2/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+	<script src="template/template2/assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+	<script src="template/template2/assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+	<script src="template/template2/assets/js/plugin/chart-circle/circles.min.js"></script>
+	<script src="template/template2/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="template/template2/assets/js/ready.min.js"></script>
+	<script src="assets/js/dashboard.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -200,6 +214,15 @@
                         </ul>
 				</div>
 			</div>
+			<script>
+				$(document).ready(function(){
+					var url = "http://localhost:3000/customer/<%=company_name%>/weeks";
+					$.get(url, function(data, status){
+						// $('#last7day')
+						console.log(data);
+					})
+				})
+			</script>
 			<div class="main-panel">
 				<div class="content">
 					<div class="container-fluid">
@@ -217,7 +240,7 @@
 											<div class="col-7 d-flex align-items-center">
 												<div class="numbers">
 													<p class="card-category">Last 7 Days Trend</p>
-													<h4 class="card-title">80 %</h4>
+													<h4 id="last7day" class="card-title">80 %</h4>
 												</div>
 											</div>
 										</div>
@@ -331,20 +354,6 @@
 		</div>
 	</div>
 </body>
-<script src="template/template2/assets/js/core/jquery.3.2.1.min.js"></script>
-<script src="template/template2/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script src="template/template2/assets/js/core/popper.min.js"></script>
-<script src="template/template2/assets/js/core/bootstrap.min.js"></script>
-<script src="template/template2/assets/js/plugin/chartist/chartist.min.js"></script>
-<script src="template/template2/assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
-<script src="template/template2/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="template/template2/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script src="template/template2/assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="template/template2/assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
-<script src="template/template2/assets/js/plugin/chart-circle/circles.min.js"></script>
-<script src="template/template2/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-<script src="template/template2/assets/js/ready.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
 <script src="assets/js/product.js"></script>
 <script>
 	$( function() {
