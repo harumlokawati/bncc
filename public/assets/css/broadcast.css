@@ -119,8 +119,8 @@
     color: white;
   }
 
-  .account{
-      padding : 10px;
+  .accounts{
+      margin-left:20px;
   }
   .logo{
       margin-right: 15px;
@@ -132,4 +132,18 @@
   }
   .center{
     text-align: center;
+  }
+  .trash-icon{
+    margin-top : auto;
+    margin-bottom : auto;
+    font-size : 15pt;
+  }
+  .icon-size{
+    font-size : 13pt;
+  }
+
+  .broadcast-message{
+    margin-left: 40px;
+    width : 500px;
+    height : 200px;
   }

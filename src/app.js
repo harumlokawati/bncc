@@ -10,7 +10,7 @@ var config = require("./config.json");
 
 //route
 var words_router = require("./controllers/pw_words_controllers");
-var reaction_router = require("./controllers/reaction_controllers");
+var reaction_router = require("./controllers/reactionController");
 var customer_router = require("./controllers/customer_review_controllers");
 
 
@@ -29,7 +29,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname,'..','public')));
 
 app.get('/', function(req, res) {
-	res.send('Webservice');
+	//res.send('Webservice');
 	console.log('crot');
 	//res.send('hello words');
 	res.render('index');
