@@ -40,3 +40,10 @@
   .nav-item:hover{
       cursor: pointer;
   }
+  .green{
+    background-color: #4CCA4B;
+  }
+  .red{
+    background-color: #dc3545;
+  }
+  
